@@ -11,10 +11,9 @@ URL:		http://homepages.ihug.co.nz/~trmusson/programs.html#gxmessage
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel
+BuildRequires:	gtk+2-devel >= 2.0.0
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 gxmessage is a GTK+2 based clone of xmessage. I is used to display a
@@ -22,7 +21,7 @@ message box with a text specified on the command line, a file or via a
 pipe.
 
 %description -l pl
-gmessage+ jest klonem xmessage korzystaj±cym z GTK+2. Mozna go
+gxmessage jest klonem xmessage korzystaj±cym z GTK+2. Mo¿na go
 wykorzystaæ do wy¶wietlania okienek z tekstem podanym z linii poleceñ,
 pliku lub potoku.
 
@@ -30,7 +29,6 @@ pliku lub potoku.
 %setup -q
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -41,7 +39,6 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
@@ -58,7 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog
 %attr(755,root,root) %{_bindir}/*
-
 %{_mandir}/man1/gxmessage.1.*
 %{_pixmapsdir}/*.png
 %{_examplesdir}/%{name}-%{version}
