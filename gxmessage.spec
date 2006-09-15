@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/gxmessage.1.*
+%{_mandir}/man1/gxmessage.1*
 %{_pixmapsdir}/*.png
 %{_examplesdir}/%{name}-%{version}
