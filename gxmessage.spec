@@ -1,5 +1,5 @@
 Summary:	Display a message using GTK+2 (like xmessage)
-Summary(pl):	Program wy¶wietlaj±cy komunikat u¿ywaj±c GTK+2 (podobny do xmessage)
+Summary(pl.UTF-8):   Program wyÅ›wietlajÄ…cy komunikat uÅ¼ywajÄ…c GTK+2 (podobny do xmessage)
 Name:		gxmessage
 Version:	2.6.1
 Release:	1
@@ -21,9 +21,9 @@ gxmessage is a GTK+2 based clone of xmessage. I is used to display a
 message box with a text specified on the command line, a file or via a
 pipe.
 
-%description -l pl
-gxmessage jest klonem xmessage korzystaj±cym z GTK+2. Mo¿na go
-wykorzystaæ do wy¶wietlania okienek z tekstem podanym z linii poleceñ,
+%description -l pl.UTF-8
+gxmessage jest klonem xmessage korzystajÄ…cym z GTK+2. MoÅ¼na go
+wykorzystaÄ‡ do wyÅ›wietlania okienek z tekstem podanym z linii poleceÅ„,
 pliku lub potoku.
 
 %prep
