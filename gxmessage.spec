@@ -1,5 +1,5 @@
 Summary:	Display a message using GTK+2 (like xmessage)
-Summary(pl.UTF-8):   Program wyświetlający komunikat używając GTK+2 (podobny do xmessage)
+Summary(pl.UTF-8):	Program wyświetlający komunikat używając GTK+2 (podobny do xmessage)
 Name:		gxmessage
 Version:	2.6.1
 Release:	1
