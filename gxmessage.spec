@@ -17,7 +17,7 @@ BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-gxmessage is a GTK+2 based clone of xmessage. I is used to display a
+gxmessage is a GTK+2 based clone of xmessage. It is used to display a
 message box with a text specified on the command line, a file or via a
 pipe.
 
