@@ -1,12 +1,12 @@
 Summary:	Display a message using GTK+2 (like xmessage)
 Summary(pl.UTF-8):	Program wyświetlający komunikat używając GTK+2 (podobny do xmessage)
 Name:		gxmessage
-Version:	2.6.2
+Version:	2.12.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://homepages.ihug.co.nz/~trmusson/stuff/%{name}-%{version}.tar.gz
-# Source0-md5:	429c49006d2e1c2075f89f612b892b4f
+# Source0-md5:	7c94c714ebedbfa2db2d645cc4a4092a
 URL:		http://homepages.ihug.co.nz/~trmusson/programs.html#gxmessage
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -57,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README AUTHORS ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/gxmessage.1*
-%{_pixmapsdir}/*.png
+%{_iconsdir}/hicolor/48x48/apps/%{name}.png
 %{_examplesdir}/%{name}-%{version}
