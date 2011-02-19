@@ -15,6 +15,9 @@ BuildRequires:	gtk+2-devel >= 2:2.6.0
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.601
+Requires:	gtk-update-icon-cache
+Requires:	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -52,6 +55,12 @@ cp -r examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%update_icon_cache hicolor
+
+%postun
+%update_icon_cache hicolor
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
